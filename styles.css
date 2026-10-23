@@ -1438,16 +1438,15 @@ body.side-open .sidepush-subitem {
   box-shadow: -2px -2px 4px var(--shadow-hi), 3px 3px 6px var(--shadow-lo);
 }
 
-/* Prevent sidebar from widening due to long subcategory labels */
-.sidepush {
-  overflow: hidden;
-}
+/* Prevent sidebar from widening due to long subcategory labels.
+   Only the scroll area clips: its padding leaves room for the selected item's shadow.
+   The scrollbar space is always reserved, so items are as wide as in libraries with a long menu. */
 .sidepush-scroll {
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 .sidepush-menu {
   max-width: 100%;
-  overflow: hidden;
 }
 
 
