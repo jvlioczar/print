@@ -660,8 +660,8 @@ body.side-open .sidepush{ width: var(--side-w-open); }
   box-sizing: border-box;
 }
 
-/* Closed state: icon-only item sized to its content */
-body:not(.side-open) .sidepush-item { flex: 0 0 auto; }
+/* Closed state: icon-only item fills the row, like the libraries without subcategories */
+body:not(.side-open) .sidepush-item { flex: 1 1 auto; }
 .sidepush-item .ico{ width: 18px; height: 18px; display:inline-flex; align-items:center; justify-content:center; opacity:.9; flex-shrink:0; }
 .sidepush-item .label{ font-size: 13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .sidepush-item:hover{
